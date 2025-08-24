@@ -13,3 +13,5 @@ createRoot(document.getElementById('root')).render(
     </LangProvider>
   </StrictMode>,
 )
+
+//comita essa porra
