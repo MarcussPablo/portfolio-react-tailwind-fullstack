@@ -1,21 +1,23 @@
-import { useContext } from "react"
+import { useContext, useState } from "react"
 import { LangContext } from "../../context/LangContext"
 
 const Experience = () => {
   const { lang } = useContext(LangContext)
+  
+  
 
   const jobs = [
     {
       id: 1,
-      title: "Topógrafo",
-      responsabilities: "jkhfgjsdfhshfjsahfadjsfhlj",
-      data: "2001 - 2005",
+      title: `${lang === 'us'? 'Topographer':'Topógrafo'}`,
+      responsabilities: `${lang === 'us'?'Various topographic survey and earthmoving works carried out at the Abreu e Lima refinery in Pernambuco.':"Diversos trabalhos realizados de levantamento topográfico e terraplanagem na refinaria Abreu e Lima em Pernambuco."}`,
+      data: "2007 - 2009",
     },
     {
       id: 2,
-      title: "Policial",
-      responsabilities: "gdfahsgjkdsh",
-      data: "2005 - Nowadays",
+      title: `${lang === 'us' ? 'Police Officer':'Policial Militar'}`,
+      responsabilities: `${lang === 'us'?'I work as a Police Corporal, quickly analyzing complex situations and making strategic decisions under pressure, while leading teams with discipline — skills I apply in development to debug issues and create efficient solutions':'Trabalho como cabo de polícia, analisando rapidamente situações complexas e tomando decisões estratégicas sob pressão, enquanto lidero equipes com disciplina — habilidades que aplico no desenvolvimento para depurar problemas e criar soluções eficientes'}`,
+      data: `2013 - ${lang === 'us'? 'Present Day': 'Dias atuais'}`,
     },
   ]
 

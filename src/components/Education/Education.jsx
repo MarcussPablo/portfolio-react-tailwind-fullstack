@@ -7,15 +7,16 @@ const Education = () => {
   const studies = [
     {
       id: 1,
-      course: "Computer Science",
-      school: "University XYZ",
-      period: "2000 - 2004"
+      course: `${lang === 'us'?'Systems Analysis and Development':'Análise e Desenvolvimento de Sistemas'}`,
+      school: "UNINASSAU - EAD",
+      period: "2024 - 2026"
     },
     {
       id: 2,
-      course: "Fullstack Web Development Bootcamp",
-      school: "Some Coding Bootcamp",
-      period: "2022 - 2023"
+      course:`${lang === 'us'?"Fullstack Web Development Bootcamps":'Bootcamps Fullstack Development'}` ,
+      school: "DIO - Digital Inovation One",
+      period: `${lang === 'us'? '2023 - Present day': '2023 - dias Atuais'}`,
+      link : 'https://www.dio.me/users/pavlolins'
     }
   ]
 
@@ -32,10 +33,21 @@ const Education = () => {
               <h4 className="text-lg font-medium">{study.course}</h4>
               <p className="text-slate-600">{study.school}</p>
               <p className="text-xs text-slate-500">{study.period}</p>
+              {study.link && (
+  <p>
+    {lang === 'us' ? (
+      <>See more at: <a className='text-blue-800' href={study.link} target="_blank">My DIO profile</a></>
+    ) : (
+      <>Veja mais em: <a className='text-blue-800' href={study.link} target="_blank">Meu perfil DIO</a></>
+    )}
+  </p>
+)}
+
             </li>
           ))}
         </ul>
       </div>
+      
     </section>
   )
 }
