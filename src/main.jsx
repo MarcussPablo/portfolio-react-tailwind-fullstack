@@ -5,6 +5,7 @@ import App from './App.jsx'
 import { LangProvider } from './context/langContext.jsx'
 
 
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <LangProvider>
