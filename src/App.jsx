@@ -1,7 +1,7 @@
 
 
-import Blog from "./components/Blog/Blog"
 import Contact from "./components/Contact/Contact"
+import Education from "./components/Education/Education"
 import Experience from "./components/Experience/Experience"
 import Footer from "./components/Footer/Footer"
 import Header from "./components/Header/Header"
@@ -17,7 +17,7 @@ const App = ()=>{
       <Skills/>
       <Projects/>
       <Experience/>
-      <Blog/>
+      <Education/>
       <Contact/>
       <Footer/>
     </div>
