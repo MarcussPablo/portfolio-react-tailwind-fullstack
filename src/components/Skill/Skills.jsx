@@ -1,5 +1,5 @@
 import { useContext } from "react"
-import { LangContext } from "../../context/langContext"
+import { LangContext } from "../../context/LangContext"
 
 const Skills = () => {
   const { lang } = useContext(LangContext)

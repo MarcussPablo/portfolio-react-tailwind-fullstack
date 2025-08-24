@@ -1,5 +1,5 @@
 import { useContext, useState } from "react"
-import { LangContext } from "../../context/langContext"
+import { LangContext } from "../../context/LangContext"
 import Flag from "react-world-flags"
 import { Menu, X } from "lucide-react"
 
