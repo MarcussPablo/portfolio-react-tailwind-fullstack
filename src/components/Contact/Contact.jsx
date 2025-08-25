@@ -1,23 +1,36 @@
 import { useContext } from "react"
 import { LangContext } from "../../context/LangContext"
+import emailjs from "emailjs-com"
 
 const Contact = () => {
+  const { lang } = useContext(LangContext)
+
   const handleSubmit = (e) => {
     e.preventDefault()
-    alert("Message sent! (hook up backend here)")
-  }
 
-  const { lang } = useContext(LangContext)
+    emailjs.sendForm(
+      "service_64enm91",   // do painel do EmailJS
+      "template_bn67owz",  // do painel do EmailJS
+      e.target,
+      "JURQPefor2n9hb9R3"    // do painel do EmailJS
+    )
+    .then(() => {
+      alert(lang === "us" ? "Message sent successfully!" : "Mensagem enviada com sucesso!")
+    })
+    .catch(() => {
+      alert(lang === "us" ? "Error sending message." : "Erro ao enviar mensagem.")
+    })
+
+    e.target.reset()
+  }
 
   return (
     <section id="contact" className="border-t py-16">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Título */}
         <h3 className="text-2xl sm:text-3xl font-semibold text-center sm:text-left">
           {lang === "us" ? "Contact" : "Contato"}
         </h3>
 
-        {/* Formulário */}
         <form
           onSubmit={handleSubmit}
           className="mt-8 grid gap-4 max-w-lg mx-auto sm:mx-0"

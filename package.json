@@ -12,6 +12,7 @@
   "dependencies": {
     "@miracleufo/react-g-translator": "^1.3.4",
     "@tailwindcss/vite": "^4.1.12",
+    "emailjs-com": "^3.2.0",
     "i18next": "^25.4.1",
     "lucide-react": "^0.541.0",
     "react": "^19.1.1",

@@ -8,7 +8,7 @@ const WhatsAppButton = () => {
 
   const style = {
     position: "fixed",
-    bottom: "20px",
+    bottom: "10rem",
     right: "20px",
     backgroundColor: "#25D366",
     borderRadius: "50%",
