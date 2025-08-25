@@ -11,14 +11,15 @@ import Projects from "./components/Projects/Peojects"
 import Skills from "./components/Skill/Skills"
 
 import { LangContext } from "./context/LangContext"
-import WhatsAppButton from "./components/WhatsappButton/WhatsappButton.jsx"
+import WhatsAppButton from "./components/wtp/wtp"
+
 
 const App = ()=>{
   const {lang} = useContext(LangContext)
   return(
     <div>
       <Header/>
-      <WhatsAppButton phoneNumber="5581986236056" message={lang === 'us'?'Hello, I want a website.':'Olá, eu quero um site'} />
+      <WhatsAppButton/>
       <Hero/>
       <Skills/>
       <Projects/>

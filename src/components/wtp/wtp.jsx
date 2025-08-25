@@ -1,8 +1,10 @@
 // WhatsAppButton.jsx
-import React from "react";
+import React, { useContext } from "react";
+import { LangContext } from "../../context/LangContext";
 
-const WhatsAppButton = ({ phoneNumber, message }) => {
-  const link = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+const WhatsAppButton = () => {
+  const {lang} = useContext(LangContext)
+  const link = `https://wa.me/5581986236056?text=${lang === 'us'?'Hello, I want a website.':'Olá, eu quero um site'}`;
 
   const style = {
     position: "fixed",
