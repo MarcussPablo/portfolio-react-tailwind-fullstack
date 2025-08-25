@@ -11,7 +11,7 @@ import Projects from "./components/Projects/Peojects"
 import Skills from "./components/Skill/Skills"
 
 import { LangContext } from "./context/LangContext"
-import WhatsAppButton from "./components/WhatsappButton/WhatsappButton"
+import WhatsAppButton from "./components/WhatsappButton/WhatsappButton.jsx"
 
 const App = ()=>{
   const {lang} = useContext(LangContext)
