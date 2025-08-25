@@ -9,7 +9,7 @@ import Header from "./components/Header/Header"
 import Hero from "./components/Hero/Hero"
 import Projects from "./components/Projects/Peojects"
 import Skills from "./components/Skill/Skills"
-import WhatsAppButton from "./components/WhatsappButton/WhatsappButton"
+import WhatsAppButton from "./src/components/WhatsAppButton/WhatsAppButton.jsx"
 import { LangContext } from "./context/LangContext"
 
 const App = ()=>{
