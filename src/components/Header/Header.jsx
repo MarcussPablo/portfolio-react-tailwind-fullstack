@@ -61,6 +61,20 @@ const Header = () => {
                 <Flag code="US" className="w-10 h-10 rounded shadow" />
               </button>
             </div>
+
+<div className="flex flex-col items-center justify-center mt-6 space-y-4">
+  <h3 className="text-2xl font-semibold text-gray-800">
+    Serviços online gratuitos
+  </h3>
+
+  <a
+    href="/qrcode"
+    className="px-6 py-3 rounded-2xl bg-blue-600 text-white font-medium shadow-md hover:bg-blue-700 hover:shadow-lg transition-all duration-300"
+  >
+    Gerador de QR Code Pix Estático
+  </a>
+</div>
+
     </>
   )
 }

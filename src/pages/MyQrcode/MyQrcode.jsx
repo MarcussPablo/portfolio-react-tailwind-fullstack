@@ -35,7 +35,7 @@ const ddds = {
 
 const isValidCPF = (str) => /^\d{11}$/.test(str);
 const isValidCNPJ = (str) => /^\d{14}$/.test(str);
-const isValidPhone = (str) => /^\d{8,9}$/.test(str); 
+const isValidPhone = (str) => /^\d{8,9}$/.test(str);
 const isValidRandom = (str) => /^[a-zA-Z0-9-]{32,36}$/.test(str);
 
 function formatDisplayKey(type, value, state) {
@@ -111,6 +111,13 @@ export default function MyQrcode() {
       </Helmet>
 
       <div className="min-h-screen flex flex-col items-center justify-start p-6 bg-gray-50">
+
+        <a
+          href="/"
+          className="px-6 py-3 rounded-2xl bg-blue-600 text-white font-medium shadow-md hover:bg-blue-700 hover:shadow-lg transition-all duration-300"
+        >
+          Voltar ao site do Desenvolvedor.
+        </a>
         <h1 className="text-3xl font-bold mb-6">Gerador de QR Code Pix Gratuito</h1>
 
         <form onSubmit={handleGenerate} className="flex flex-col gap-4 mb-6 w-full max-w-md">
