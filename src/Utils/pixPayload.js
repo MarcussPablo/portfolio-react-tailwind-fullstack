@@ -47,3 +47,6 @@ export function generatePixPayload({ pixKey, merchantName, city, amount }) {
 
   return fullPayload + crc;
 }
+
+
+//123456
