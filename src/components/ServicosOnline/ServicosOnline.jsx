@@ -6,16 +6,17 @@ const ServicosOnline = () => {
                     Seviços online gratúitos:
                 </h3>
                 <div className="border border-gray-500 rounded p-3 ">
+
+                    <h3 className="py-2 mt-3 text-2xl font-semibold">Gerador de QrCode estático para pix.</h3>
+                    <h4 className="mt-3 text-2xl font-normal">Gere e imprima ou baixe gratuitamente um Qrcode estático para suas chaves pix.</h4>
+                    <p>Muito útil para você que tem um comércio e precisa agilizar os recebimentos via pix.</p>
                     <a
                         href="/qrcode" target="_blank"
-                        className="sm:px-2 py-3  rounded-2xl bg-blue-600 text-white  sm:text-md shadow-md hover:bg-blue-700 hover:shadow-lg transition-all duration-300"
+                        className="inline-block sm:px-2 py-2 mt-3 rounded bg-blue-600 text-white  sm:text-md shadow-md hover:bg-blue-700 hover:shadow-lg transition-all duration-300"
                     >
-                        Gerador de QrCode estático para pix
+                        Confira
                     </a>
-                    <h4 className="py-2 mt-3 text-2xl font-semibold">Gere e imprima ou baixe gratuitamente um Qrcode estático para suas chaves pix.</h4>
-                    <p>Muito útil para você que tem um comércio e precisa agilizar os recebimentos via pix.</p>
                 </div>
-
             </div>
         </section>
     )

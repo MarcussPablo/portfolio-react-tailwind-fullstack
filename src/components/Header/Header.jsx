@@ -68,7 +68,7 @@ const Header = () => {
 
         <a
           href="#servicosOnline"
-          className="px-6 py-3 rounded-2xl bg-blue-600 text-white font-medium shadow-md hover:bg-blue-700 hover:shadow-lg transition-all duration-300"
+          className="px-6 py-3 rounded bg-blue-600 text-white font-medium shadow-md hover:bg-blue-700 hover:shadow-lg transition-all duration-300"
         >
           Serviços online gratuitos
 
