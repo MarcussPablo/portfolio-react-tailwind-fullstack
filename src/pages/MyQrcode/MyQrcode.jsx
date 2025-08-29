@@ -114,9 +114,9 @@ export default function MyQrcode() {
 
         <a
           href="/"
-          className="px-6 py-3 rounded-2xl bg-blue-600 text-white font-medium shadow-md hover:bg-blue-700 hover:shadow-lg transition-all duration-300"
+          className="px-6 py-2 my-6 rounded-2xl bg-blue-600 text-white font-medium shadow-md hover:bg-blue-700 hover:shadow-lg transition-all duration-300"
         >
-          Voltar ao site do Desenvolvedor.
+          Visite o site do Desenvolvedor.
         </a>
         <h1 className="text-3xl font-bold mb-6">Gerador de QR Code Pix Gratuito</h1>
 
@@ -170,7 +170,7 @@ export default function MyQrcode() {
           )}
 
           <button type="submit" className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition">
-            Gerar QR
+            Gerar QRcode
           </button>
         </form>
 

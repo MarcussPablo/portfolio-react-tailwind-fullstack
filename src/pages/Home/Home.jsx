@@ -10,8 +10,10 @@ import Skills from "../../components/Skill/Skills"
 import Projects from "../../components/Projects/Peojects"
 import Experience from "../../components/Experience/Experience"
 import Education from "../../components/Education/Education"
-import { Contact } from "lucide-react"
+
 import Footer from "../../components/Footer/Footer"
+import ServicosOnline from "../../components/ServicosOnline/ServicosOnline"
+import Contact from "../../components/Contact/Contact"
 
 
 
@@ -26,6 +28,7 @@ const Home= ()=>{
       <Projects/>
       <Experience/>
       <Education/>
+      <ServicosOnline/>
       <Contact/>
       <Footer/>
     </div>

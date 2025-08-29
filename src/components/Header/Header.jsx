@@ -51,29 +51,29 @@ const Header = () => {
           </div>
         )}
       </header>
-                  {/* Seletor de idioma dentro do mobile menu */}
-            <div className="flex items-center justify-center gap-x-4 mt-3">
-              <p className="text-sm">{lang === "us" ? "Set language:" : "Selecione o idioma:"}</p>
-              <button onClick={translateToPortugese}>
-                <Flag code="BR" className="w-10 h-10 rounded shadow" />
-              </button>
-              <button onClick={translateToEnglish}>
-                <Flag code="US" className="w-10 h-10 rounded shadow" />
-              </button>
-            </div>
+      {/* Seletor de idioma dentro do mobile menu */}
+      <div className="flex items-center justify-center gap-x-4 mt-3">
+        <p className="text-sm">{lang === "us" ? "Set language:" : "Selecione o idioma:"}</p>
+        <button onClick={translateToPortugese}>
+          <Flag code="BR" className="w-10 h-10 rounded shadow" />
+        </button>
+        <button onClick={translateToEnglish}>
+          <Flag code="US" className="w-10 h-10 rounded shadow" />
+        </button>
 
-<div className="flex flex-col items-center justify-center mt-6 space-y-4">
-  <h3 className="text-2xl font-semibold text-gray-800">
-    Serviços online gratuitos
-  </h3>
+      </div>
 
-  <a
-    href="/qrcode"
-    className="px-6 py-3 rounded-2xl bg-blue-600 text-white font-medium shadow-md hover:bg-blue-700 hover:shadow-lg transition-all duration-300"
-  >
-    Gerador de QR Code Pix Estático
-  </a>
-</div>
+      <div className="flex flex-col items-center justify-center mt-6 space-y-4">
+
+
+        <a
+          href="#servicosOnline"
+          className="px-6 py-3 rounded-2xl bg-blue-600 text-white font-medium shadow-md hover:bg-blue-700 hover:shadow-lg transition-all duration-300"
+        >
+          Serviços online gratuitos
+
+        </a>
+      </div>
 
     </>
   )
