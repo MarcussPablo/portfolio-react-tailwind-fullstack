@@ -15,10 +15,10 @@ const Header = () => {
       <header className="max-w-6xl mx-auto p-6">
         <nav className="flex items-center justify-between" aria-label="Main navigation">
           {/* Logo / Nome */}
-          <h1 className="text-lg font-medium">
+          <h1 className="font-medium md:text-md ">
             {lang === "us"
-              ? "Marcus • Fullstack Developer"
-              : "Marcus • Desenvolvedor Fullstack"}
+              ? "Marcus • Fullstack Developer React | Node | Postgre"
+              : "Marcus • Desenvolvedor Fullstack React | Node | Postgre"}
           </h1>
 
           {/* Menu desktop */}
