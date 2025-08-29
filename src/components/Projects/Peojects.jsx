@@ -4,6 +4,12 @@ import { ExternalLink, Github } from "lucide-react" // Ícones
 
 const Projects = () => {
   const { lang } = useContext(LangContext)
+  const projects = [{
+    id:1,
+    name:`${lang === 'us'?"Static QRcode Pix generator(you need a brasilian banc service)" : 'Gerador de QrCode estático para pix'}`,
+    description:'Gera e imprime ou baixa gratuitamente um Qrcode estático para suas chaves pix.',
+    image:'/imgGeradorPix.png'
+  }]
 
   return (
     <section id="projects" className="border-t py-16">
@@ -18,27 +24,29 @@ const Projects = () => {
         </p>
 
         <ul className="mt-8 grid gap-6 md:grid-cols-2">
-          {[1, 2].map((id) => (
+          {projects.map((p) => (
             <li
-              key={id}
+              key={p.id}
               className="rounded-lg border p-5 shadow-sm hover:shadow-md transition"
             >
-              <h4 className="text-lg font-medium">Project Title {id}</h4>
+              <img src={p.image} alt="" className="shadow" />
+              <h4 className="text-lg font-medium"> {p.name}</h4>
               <p className="mt-1 text-slate-600">
-                Short description of project {id} and what tech it uses.
+                {p.description}.
               </p>
 
               <div className="mt-3 flex gap-4 text-sm">
                 <a
                   className="flex items-center gap-1 underline hover:text-blue-600"
-                  href="#"
+                  href="/qrcode" target="_blank"
                 >
                   <ExternalLink size={16} />{" "}
                   {lang === "us" ? "View online" : "Ver online"}
                 </a>
                 <a
                   className="flex items-center gap-1 underline hover:text-gray-700"
-                  href="#"
+                  href="https://github.com/MarcussPablo/portfolio-react-tailwind-fullstack"
+                  target="_blank"
                 >
                   <Github size={16} />{" "}
                   {lang === "us" ? "View in Github" : "Ver no Github"}
