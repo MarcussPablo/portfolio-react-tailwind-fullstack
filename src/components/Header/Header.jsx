@@ -26,7 +26,7 @@ const Header = () => {
             <li><a href="#skills" className="hover:underline">{lang === "us" ? "Skills" : "Habilidades"}</a></li>
             <li><a href="#projects" className="hover:underline">{lang === "us" ? "Projects" : "Projetos"}</a></li>
             <li><a href="#experience" className="hover:underline">{lang === "us" ? "Experience" : "Experiência"}</a></li>
-            <li><a href="#blog" className="hover:underline">Blog</a></li>
+            <li><a href="#education" className="hover:underline">{lang === "us" ? "Education" : "Educação"}</a></li>
             <li><a href="#contact" className="hover:underline">{lang === "us" ? "Contact" : "Contato"}</a></li>
           </ul>
 
